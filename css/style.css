@@ -63,6 +63,33 @@ h1 {
     width: 80px;
     border-radius: 5px;
     background-color: rgb(221, 221, 221);
-    padding: 3px;
+    line-height: 23px;
     border: rgb(92, 92, 92) solid 1px;
+}
+/* header */
+/* main */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.cell {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cell-click {
+    background-color: rgb(0, 174, 255);
+    color: white;
 }
