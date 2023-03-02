@@ -13,8 +13,7 @@ body {
 }
 
 header, footer {
-    padding: .9375rem;
-    background-color: antiquewhite;
+    padding: 1.25rem;
     display: flex;
     justify-content: space-between;
 }
@@ -44,3 +43,26 @@ h1 {
 
 /* nav right */
 
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+#challenge {
+    width: 200px;
+    border-radius: 5px;
+    background-color: rgb(221, 221, 221);
+    padding: 3px;
+    border: rgb(92, 92, 92) solid 1px;
+    margin-right: .3125rem;
+}
+#challenge option {
+    padding-top: 10px;
+}
+.play {
+    width: 80px;
+    border-radius: 5px;
+    background-color: rgb(221, 221, 221);
+    padding: 3px;
+    border: rgb(92, 92, 92) solid 1px;
+}
