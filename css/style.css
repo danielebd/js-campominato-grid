@@ -81,9 +81,25 @@ main {
     flex-wrap: wrap;
     align-content: flex-start;
 }
-.cell {
+.cell-100 {
     width: calc(100% / 10);
     height: calc(100% / 10);
+    border: solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cell-91 {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    border: solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cell-49 {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
     border: solid 1px;
     display: flex;
     align-items: center;
