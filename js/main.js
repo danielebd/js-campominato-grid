@@ -11,6 +11,23 @@ function myCreateElement(myCase, htmlElement, myClass, text) {
     return element;
 }
 
+function numberCell(numCell, nameClass) {
+    let container = document.querySelector('.container');
+    container.innerHTML = '';
+
+    for (let i = 1; i <= numCell; i++) {
+        myCreateElement('.container', 'div', nameClass, i);
+    }
+
+    let inputCell = document.querySelectorAll(`.${nameClass}`);
+    inputCell.forEach(function (elem) {
+        elem.addEventListener('click', function () {
+            elem.classList.add('cell-click');
+            console.log(elem.innerHTML)
+        })
+    })
+}
+
 const inputButton = document.querySelector('.play');
 inputButton.addEventListener('click', function () {
 
@@ -29,26 +46,6 @@ inputButton.addEventListener('click', function () {
         range = 49;
         numberCell(range, 'cell-49');
     }
-    console.log(range)
-
-    function numberCell(numCell, nameClass) {
-        let container = document.querySelector('.container');
-        container.innerHTML = '';
-
-        for (let i = 1; i <= numCell; i++) {
-            myCreateElement('.container', 'div', nameClass, i);
-
-        }
-
-        let inputCell = document.querySelectorAll(`.${nameClass}`);
-        inputCell.forEach(function (elem) {
-            elem.addEventListener('click', function () {
-                elem.classList.add('cell-click');
-                console.log(elem.innerHTML)
-            })
-        })
-    }
-
 })
 
 
